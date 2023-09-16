@@ -1,6 +1,6 @@
 # Desafio QA - Sávio Cunha de Carvalho
 
-- [Link do video da automatização](!https://youtu.be/xHMyIHnnY5I) 
+- [Link do video da automatização](https://youtu.be/xHMyIHnnY5I) 
 
 
 ## Instrução para exceltar os testes:
