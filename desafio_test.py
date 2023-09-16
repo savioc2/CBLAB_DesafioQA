@@ -174,7 +174,7 @@ def test_cadastro_usuario():
         EC.visibility_of_element_located(
             (
                 By.XPATH,
-                "/html/body/app-root/ion-app/div/div/desktop-modal/div[2]/register-popup/div/form/div[11]/ion-item[1]/ion-checkbox//label",
+                "/html/body/app-root/ion-app/div/div/desktop-modal/div[2]/register-popup/div/form/div[11]/ion-item[1]/ion-checkbox//svgform/div[11]/ion-item[1]/ion-checkbox//label",
             )   
         )
     )
