@@ -40,6 +40,7 @@ def test_login_usuario_cadastrado():
 
     time.sleep(5)
 
+
 def test_login_usuario_cadastrado_invalido():
     SITE_LINK = "https://app.cocobambu.com/entrar?backPage=on-boarding%2Fdelivery%3FnextPage%3D%252Fdelivery"
 
@@ -72,6 +73,7 @@ def test_login_usuario_cadastrado_invalido():
     entrar_button.click()
 
     time.sleep(5)
+
 
 def test_cadastro_usuario():
     SITE_LINK = "https://app.cocobambu.com/entrar?backPage=on-boarding%2Fdelivery%3FnextPage%3D%252Fdelivery"
@@ -147,13 +149,12 @@ def test_cadastro_usuario():
         EC.visibility_of_element_located(
             (
                 By.XPATH,
-                "//ion-sel-1-lbl",
+                "/html/body/app-root/ion-app/div/div/desktop-modal/div[2]/register-popup/div/form/div[9]",
                 # "/html/body/app-root/ion-app/div/div/desktop-modal/div[2]/register-popup/div/form/div[9]/ion-select//label",
             )
         )
     )
     estado_button.click()
-    ipdb.set_trace()
 
     wait = WebDriverWait(driver, 5)
 
@@ -174,7 +175,7 @@ def test_cadastro_usuario():
             (
                 By.XPATH,
                 "/html/body/app-root/ion-app/div/div/desktop-modal/div[2]/register-popup/div/form/div[11]/ion-item[1]/ion-checkbox//label",
-            )
+            )   
         )
     )
     notificicacao_button.click()
@@ -222,7 +223,7 @@ def test_reset_senha():
 
     time.sleep(5)
 
-    #wait = WebDriverWait(driver, 5)
+    # wait = WebDriverWait(driver, 5)
     # Passo 3: Clicar em recuperar
     # reset_senha = wait.until(
     #     EC.visibility_of_element_located(
@@ -235,7 +236,7 @@ def test_reset_senha():
         "/html/body/app-root/ion-app/ion-alert/div[2]/div[4]/button[2]",
     )
     cadastra.click()
-    #reset_senha.click()
+    # reset_senha.click()
     time.sleep(5)
 
     # ok_button = driver.find_element(
@@ -244,6 +245,7 @@ def test_reset_senha():
     # )
     # ok_button.click()
     time.sleep(5)
+
 
 def test_reset_senha_email_invalido():
     SITE_LINK = "https://app.cocobambu.com/entrar?backPage=on-boarding%2Fdelivery%3FnextPage%3D%252Fdelivery"
@@ -273,7 +275,7 @@ def test_reset_senha_email_invalido():
 
     time.sleep(5)
 
-    #wait = WebDriverWait(driver, 5)
+    # wait = WebDriverWait(driver, 5)
     # Passo 3: Clicar em recuperar
     # reset_senha = wait.until(
     #     EC.visibility_of_element_located(
@@ -286,7 +288,7 @@ def test_reset_senha_email_invalido():
         "/html/body/app-root/ion-app/ion-alert/div[2]/div[4]/button[2]",
     )
     cadastra.click()
-    #reset_senha.click()
+    # reset_senha.click()
     time.sleep(5)
 
     # ok_button = driver.find_element(
@@ -298,8 +300,7 @@ def test_reset_senha_email_invalido():
 
 
 # test_login_usuario_cadastrado()
-test_login_usuario_cadastrado_invalido()
+# test_login_usuario_cadastrado_invalido()
 # test_reset_senha()
 # test_reset_senha_email_invalido()
-# test_cadastro_usuario()
-
+test_cadastro_usuario()
