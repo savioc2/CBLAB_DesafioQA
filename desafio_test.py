@@ -175,7 +175,7 @@ def test_cadastro_usuario():
             (
                 By.XPATH,
                 "/html/body/app-root/ion-app/div/div/desktop-modal/div[2]/register-popup/div/form/div[11]/ion-item[1]/ion-checkbox//svgform/div[11]/ion-item[1]/ion-checkbox//label",
-            )   
+            )
         )
     )
     notificicacao_button.click()
@@ -299,8 +299,8 @@ def test_reset_senha_email_invalido():
     time.sleep(5)
 
 
-# test_login_usuario_cadastrado()
-# test_login_usuario_cadastrado_invalido()
-# test_reset_senha()
-# test_reset_senha_email_invalido()
+test_login_usuario_cadastrado()
+test_login_usuario_cadastrado_invalido()
+test_reset_senha()
+test_reset_senha_email_invalido()
 test_cadastro_usuario()
